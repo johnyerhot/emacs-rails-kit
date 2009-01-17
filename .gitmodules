@@ -10,3 +10,6 @@
 [submodule "vendor/textmate"]
 	path = vendor/textmate
 	url = git://github.com/defunkt/textmate.el.git
+[submodule "vendor/yasnippet"]
+	path = vendor/yasnippet
+	url = git://github.com/mig/yasnippet.git
