@@ -1,4 +1,4 @@
-;; emacs-rails.el - functions, bindings and config for working w/ rails
+;; emacs-rails.el - config that will make working with rails seriously fun
 
 ;; Textmate - helpful mode from defunkt
 (load-lib-dir "vendor/textmate")
@@ -38,3 +38,7 @@
 (yas/initialize)
 (yas/load-directory (concat root-dir yasnippet-dir "/snippets"))
 
+;; C-l inserts a hash mark
+(eval-after-load 'ruby-mode 
+  '(progn
+     (define-key ruby-mode-map (kbd "C-l") " => ")))
