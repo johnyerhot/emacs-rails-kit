@@ -2,13 +2,26 @@
 
 (require 'cl)
 
-(defvar lib-dir "~/.emacs.d/")
+(defvar root-dir "~/.emacs.d/")
 (defun load-lib (name)
-  (load (concat lib-dir name ".el")))
+  (load (concat root-dir name ".el")))
 (defun load-lib-dir (path)
-  (add-to-list 'load-path (concat lib-dir path)))
+  (add-to-list 'load-path (concat root-dir path)))
 
-(load-lib-dir lib-dir)
+(load-lib-dir root-dir)
+
+(setq autoload-file (concat root-dir "loaddefs.el"))
+
+(setq custom-file (concat root-dir "custom.el"))
+
+;; Here is the package it, what you install with it is up to you, there
+;; will probably be some overlap though in what I provide in the modes
+;; directory and what the elpa offers, not sure what to do about that
+(load-lib "package")
+(load-lib-dir "elpa")
+(require 'package)
+(setq package-user-dir (concat root-dir "elpa"))
+(package-initialize)
 
 (setq inhibit-startup-message t)
 (setq make-backup-files nil)
