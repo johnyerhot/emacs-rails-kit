@@ -16,7 +16,7 @@
         (font . "-apple-inconsolata-medium-r-normal--18-0-72-72-m-0-iso10646-1")))
 
 ;; color theme - with my merbivore theme applied
-(load-lib-dir "lisp/color-theme")
+(load-lib-dir "vendor/color-theme")
 (require 'color-theme)
 (color-theme-initialize)
 (setq color-theme-is-global t)

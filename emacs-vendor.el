@@ -1,16 +1,14 @@
-;; emacs-modes.el - loading different modes to extend emacs
+;; emacs-vedor.el - general purpose modes to extend emacs
 
-(load-lib-dir "lisp")
+(load-lib-dir "vendor")
 
 ; Interactively Do Things - ido - needed
 (require 'ido)
 (ido-mode t)
 (setq ido-enable-flex-matching t)
 
+;; Unbound - describe-unbound-keys
 (require 'unbound)
-
-; SLIME
-(require 'slime)
 
 ; Magit
 (require 'magit)
