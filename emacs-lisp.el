@@ -1,4 +1,4 @@
-;; emacs-modes.el - loading different modes to extend emacs
+;; emacs-lisp.el - loading different modes to extend emacs
 
 (load-lib-dir "lisp")
 

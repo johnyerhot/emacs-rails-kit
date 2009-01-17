@@ -1,6 +1,8 @@
 ;; init.el - from which all other configuration flows
 
 (require 'cl)
+(require 'ansi-color)
+(require 'recentf)
 
 (defvar root-dir "~/.emacs.d/")
 (defun load-lib (name)
@@ -11,7 +13,6 @@
 (load-lib-dir root-dir)
 
 (setq autoload-file (concat root-dir "loaddefs.el"))
-
 (setq custom-file (concat root-dir "custom.el"))
 
 ;; Here is the package it, what you install with it is up to you, there
@@ -33,4 +34,5 @@
 
 (when window-system (load-lib "emacs-gui"))
 (load-lib "emacs-key-bindings")
-(load-lib "emacs-modes")
+(load-lib "emacs-functions")
+(load-lib "emacs-lisp")
