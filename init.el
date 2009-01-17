@@ -36,3 +36,14 @@
 (load-lib "emacs-key-bindings")
 (load-lib "emacs-functions")
 (load-lib "emacs-lisp")
+
+(load custom-file 'noerror)
+
+;; Load user config and system config
+(setq system-specific-config (concat root-dir system-name ".el")
+      user-specific-config (concat root-dir user-login-name ".el"))
+
+(if (file-exists-p system-specific-config) (load system-specific-config))
+(if (file-exists-p user-specific-config) (load user-specific-config))
+
+ ;; init.el end

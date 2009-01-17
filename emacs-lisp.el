@@ -7,10 +7,8 @@
 (ido-mode t)
 (setq ido-enable-flex-matching t)
 
+;; Unbound - describe-unbound-keys
 (require 'unbound)
-
-; SLIME
-(require 'slime)
 
 ; Magit
 (require 'magit)
