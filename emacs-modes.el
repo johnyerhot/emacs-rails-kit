@@ -2,6 +2,11 @@
 
 (load-lib-dir "modes")
 
+; Interactively Do Things - ido - needed
+(require 'ido)
+(ido-mode t)
+(setq ido-enable-flex-matching t)
+
 ; Magit
 (require 'magit)
 
