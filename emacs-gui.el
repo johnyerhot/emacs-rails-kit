@@ -16,8 +16,7 @@
 ;; set the size of the emacs frame
 (setq default-frame-alist 
       '((width . 120) 
-        (height .40) 
-        (font . "-apple-inconsolata-medium-r-normal--18-0-72-72-m-0-iso10646-1")))
+        (height . 40)))
 
 ;; color theme - with my merbivore theme applied
 (load-lib-dir "vendor/color-theme")
