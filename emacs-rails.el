@@ -13,13 +13,6 @@
 ;; see: http://github.com/blog/180-local-github-config
 (require 'gist)
 
-;; Snippet's - our choice here is yasnippet, i like the mode linkings
-(defvar yasnippet-dir "vendor/yasnippet")
-(load-lib-dir yasnippet-dir)
-(require 'yasnippet)
-(yas/initialize)
-(yas/load-directory (concat root-dir yasnippet-dir "/snippets"))
-
 ;; Rinari
 (load-lib-dir "vendor/jump")
 (load-lib-dir "vendor/rinari")
@@ -28,3 +21,11 @@
 ;; Rhtml
 (load-lib-dir "vendor/rhtml")
 (require 'rhtml-mode)
+
+;; Snippet's - our choice here is yasnippet, i like the mode linkings
+(defvar yasnippet-dir "vendor/yasnippet")
+(load-lib-dir yasnippet-dir)
+(require 'yasnippet)
+(yas/initialize)
+(yas/load-directory (concat root-dir yasnippet-dir "/snippets"))
+
