@@ -14,6 +14,11 @@
 (require 'magit)
 (global-set-key (kbd "C-x g") 'magit-status)
 
+(eval-after-load 'magit
+  '(progn
+     (set-face-foreground 'magit-diff-add "green3")
+     (set-face-foreground 'magit-diff-del "red3")))
+
 ;; Textile
 (require 'textile-mode)
 (add-to-list 'auto-mode-alist '("\\.textile\\'" . textile-mode))
@@ -23,7 +28,7 @@
 
 ;; Javascript (js2)
 (autoload 'js2-mode "js2" nil t)
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.js\\(on\\)?$" . js2-mode))
 (setq js2-basic-offset 2)
 (setq js2-use-font-lock-faces t)
 
