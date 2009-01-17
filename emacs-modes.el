@@ -7,8 +7,12 @@
 (ido-mode t)
 (setq ido-enable-flex-matching t)
 
+; SLIME
+(require 'slime)
+
 ; Magit
 (require 'magit)
+(global-set-key (kbd "C-x g") 'magit-status)
 
 ; Textile
 (require 'textile-mode)
