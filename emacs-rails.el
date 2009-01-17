@@ -5,13 +5,10 @@
 (require 'textmate)
 (textmate-mode t)
 
-;; Cheat - for using cheat.errtheblog.com for some reference
-(require 'cheat)
-
-;; Gist - learn to use this within emacs and it WILL help you
-;; it will use your ~/.gitconfig if it finds one
-;; see: http://github.com/blog/180-local-github-config
-(require 'gist)
+;; Ruby
+(require 'ruby-mode)
+(require 'ruby-electric)
+(add-to-list 'auto-mode-alist '("\\.rb\\'" . ruby-mode))
 
 ;; Rinari
 (load-lib-dir "vendor/jump")
@@ -21,6 +18,9 @@
 ;; Rhtml
 (load-lib-dir "vendor/rhtml")
 (require 'rhtml-mode)
+
+;; YAML
+(require 'yaml-mode)
 
 ;; Snippet's - our choice here is yasnippet, i like the mode linkings
 (defvar yasnippet-dir "vendor/yasnippet")
