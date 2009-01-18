@@ -10,6 +10,8 @@
 (require 'ruby-electric)
 (add-to-list 'auto-mode-alist '("\\.rb\\'" . ruby-mode))
 
+(global-set-key (kbd "M-r") 'ruby-compilation-this-buffer)
+
 ;; Rinari
 (load-lib-dir "vendor/jump")
 (load-lib-dir "vendor/rinari")
