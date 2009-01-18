@@ -13,3 +13,6 @@
 [submodule "vendor/yasnippet"]
 	path = vendor/yasnippet
 	url = git://github.com/mig/yasnippet.git
+[submodule "vendor/color-theme-merbivore"]
+	path = vendor/color-theme-merbivore
+	url = git://github.com/mig/color-theme-merbivore.git
