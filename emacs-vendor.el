@@ -43,7 +43,20 @@
 ;; Scala
 (load-lib-dir "vendor/scala-mode")
 (require 'scala-mode-auto)
-
 (defun me-turn-off-indent-tabs-mode ()
   (setq indent-tabs-mode nil))
 (add-hook 'scala-mode-hook 'me-turn-off-indent-tabs-mode)
+
+;; Clojure
+(load-lib-dir "vendor/clojure-mode")
+(require 'clojure-auto)
+
+(load-lib-dir "vendor/slime")
+(require 'slime)
+(slime-setup)
+
+(load-lib-dir "vendor/swank-clojure")
+;; this file can be found as gist: 48869
+;; or checkout this video: http://vimeo.com/2419596
+(setq swank-clojure-binary "~/bin/clojure")
+(require 'swank-clojure-autoload)
