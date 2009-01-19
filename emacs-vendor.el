@@ -40,3 +40,10 @@
 ;; see: http://github.com/blog/180-local-github-config
 (require 'gist)
 
+;; Scala
+(load-lib-dir "vendor/scala-mode")
+(require 'scala-mode-auto)
+
+(defun me-turn-off-indent-tabs-mode ()
+  (setq indent-tabs-mode nil))
+(add-hook 'scala-mode-hook 'me-turn-off-indent-tabs-mode)
