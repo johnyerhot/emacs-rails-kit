@@ -1,1 +1,4 @@
 *.elc
+elpa/*
+url/*
+custom.el
