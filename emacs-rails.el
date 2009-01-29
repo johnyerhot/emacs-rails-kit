@@ -44,3 +44,10 @@
 (eval-after-load 'ruby-mode 
   '(progn
      (define-key ruby-mode-map (kbd "C-l") " => ")))
+(eval-after-load 'haml-mode 
+  '(progn
+     (define-key haml-mode-map (kbd "C-l") " => ")))
+(eval-after-load 'rhtml-mode 
+  '(progn
+     (define-key rhtml-mode-map (kbd "C-l") " => ")
+     (define-key rhtml-mode-map (kbd "M-s") 'save-buffer)))
