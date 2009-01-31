@@ -18,6 +18,10 @@
   (untabify-buffer)
   (delete-trailing-whitespace))
 
+(defun clear-buffer () 
+  (interactive)
+  (kill-region (point-min) (point-max)))
+
 (defun recentf-ido-find-file ()
   "Find a recent file using ido."
   (interactive)
