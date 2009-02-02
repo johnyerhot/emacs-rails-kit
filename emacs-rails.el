@@ -37,6 +37,7 @@
 
 ;; YAML
 (require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
 ;; Snippet's - our choice here is yasnippet, i like the mode linkings
 (defvar yasnippet-dir "vendor/yasnippet")
