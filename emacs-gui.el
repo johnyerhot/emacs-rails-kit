@@ -14,9 +14,9 @@
 (column-number-mode t)
 
 ;; set the size of the emacs frame
-(setq default-frame-alist 
-      '((width . 120) 
-        (height . 40)))
+;; (setq default-frame-alist 
+;;       '((width . 120) 
+;;         (height . 40)))
 
 ;; color theme - with my merbivore theme applied
 (load-lib-dir "vendor/color-theme")
@@ -25,4 +25,4 @@
 (color-theme-initialize)
 (setq color-theme-is-global t)
 (load-file (concat root-dir "/vendor/color-theme-merbivore/color-theme-merbivore.el"))
-(color-theme-merbivore)
+;; (color-theme-merbivore)
