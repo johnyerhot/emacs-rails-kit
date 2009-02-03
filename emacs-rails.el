@@ -30,6 +30,10 @@
 (require 'sass-mode)
 (add-to-list 'auto-mode-alist '("\\.sass$" . sass-mode))
 
+(eval-after-load 'haml-mode
+  (if (functionp 'whitespace-mode)
+      (add-hook 'haml-mode-hook 'whitespace-mode)))
+
 ;; YAML
 (require 'yaml-mode)
 
