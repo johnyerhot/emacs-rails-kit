@@ -1,9 +1,9 @@
-(defun color-theme-vivid-chalk () 
-  "Based on Vivid Chalk, a vim port of Vibrant Ink." 
+(defun color-theme-vibrant-ink () 
+  "Vibrant Ink" 
   (interactive) 
   (color-theme-install 
-   '(color-theme-vivid-chalk 
-     ((background-color . "black") 
+   '(color-theme-vibrant-ink 
+     ((background-color . "#111111") 
       (background-mode . dark) 
       (border-color . "black") 
       (cursor-color . "white") 
@@ -24,19 +24,19 @@
      (font-lock-reference-face ((t (:foreground "LightSteelBlue")))) 
      (font-lock-string-face ((t (:foreground "#66FF00")))) 
      (font-lock-doc-face ((t (:foreground "LightSalmon")))) 
-     (font-lock-type-face ((t (:italic t :foreground "#aaaaaa")))) 
-     (font-lock-variable-name-face ((t (:foreground "#aaccff")))) 
+     (font-lock-type-face ((t (:foreground "#FFFFFF")))) 
+     (font-lock-variable-name-face ((t (:foreground "#FFFFFF")))) 
      (font-lock-warning-face ((t (:bold t :foreground "Pink")))) 
      (paren-face-match-light ((t (:background "#222222")))) 
      (highlight ((t (:background "darkolivegreen")))) 
      (italic ((t (:italic t)))) 
-     (modeline ((t (:background "#a5baf1" :foreground "black")))) 
-     (modeline-buffer-id ((t (:background "#a5baf1" :foreground 
+     (modeline ((t (:background "#444444" :foreground "black")))) 
+     (modeline-buffer-id ((t (:background "#444444" :foreground 
 "black")))) 
-     (modeline-mousable ((t (:background "#a5baf1" :foreground 
+     (modeline-mousable ((t (:background "#444444" :foreground 
 "black")))) 
      (modeline-mousable-minor-mode ((t (:background 
-"#a5baf1" :foreground "black")))) 
+"#444444" :foreground "black")))) 
      (region ((t (:background "#555577")))) 
      (primary-selection ((t (:background "#555577")))) 
      (isearch ((t (:background "#555555")))) 
