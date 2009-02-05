@@ -21,12 +21,27 @@
                                          'fullboth)))
 (global-set-key (kbd "M-n") 'toggle-fullscreen)
 
+;; set emacs to dark mode
+(defun emacs-dark-mode ()
+  (set-background-color "black")
+  (set-foreground-color "white"))
+
+(defun emacs-light-mode ()
+  (set-background-color "white")
+  (set-foreground-color "black"))
+
+(defun refresh-file ()
+  (interactive)
+  (revert-buffer t t t))
+
+(global-set-key [f5] 'refresh-file)
+
 ;; set the size of the emacs frame
 ;; (setq default-frame-alist 
 ;;       '((width . 120) 
 ;;         (height . 40)))
 
-;; color theme - with my merbivore theme applied
+;; color theme - with my merbivore theme included
 (load-lib-dir "vendor/color-theme")
 (load-lib-dir "vendor/color-theme-merbivore")
 (require 'color-theme)
