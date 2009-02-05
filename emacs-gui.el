@@ -23,10 +23,12 @@
 
 ;; set emacs to dark mode
 (defun dark-theme ()
+  (interactive)
   (set-background-color "black")
   (set-foreground-color "white"))
 
 (defun light-theme ()
+  (interactive)
   (set-background-color "white")
   (set-foreground-color "black"))
 
@@ -35,6 +37,8 @@
   (revert-buffer t t t))
 
 (global-set-key [f5] 'refresh-file)
+
+(dark-theme)
 
 ;; color theme - with my merbivore theme included
 (load-lib-dir "vendor/color-theme")
