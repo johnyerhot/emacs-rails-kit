@@ -38,15 +38,15 @@
 
 (global-set-key [f5] 'refresh-file)
 
-(dark-theme)
-
-;; color theme - with my merbivore theme included
+;; color theme - with merbivore and vibrant ink themes included
 (load-lib-dir "vendor/color-theme")
 (load-lib-dir "vendor/color-theme-merbivore")
+(load-lib-dir "vendor/color-theme-vibrant-ink")
 (require 'color-theme)
 (color-theme-initialize)
 (setq color-theme-is-global t)
 (load-file (concat root-dir "/vendor/color-theme-merbivore/color-theme-merbivore.el"))
+(load-file (concat root-dir "/vendor/color-theme-vibrant-ink/color-theme-vibrant-ink.el"))
 
-;; load a theme like this
-; (color-theme-merbivore)
+;; load the theme
+(color-theme-vibrant-ink)

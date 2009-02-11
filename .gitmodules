@@ -16,3 +16,6 @@
 [submodule "vendor/color-theme-merbivore"]
 	path = vendor/color-theme-merbivore
 	url = git://github.com/mig/color-theme-merbivore.git
+[submodule "vendor/color-theme-vibrant-ink"]
+	path = vendor/color-theme-vibrant-ink
+	url = git://github.com/mig/color-theme-vibrant-ink.git
