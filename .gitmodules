@@ -25,3 +25,7 @@
 [submodule "vendor/swank-clojure"]
 	path = vendor/swank-clojure
 	url = git://github.com/jochu/swank-clojure.git
+[submodule "vendor/color-theme-vibrant-ink"]
+	path = vendor/color-theme-vibrant-ink
+	url = git://github.com/mig/color-theme-vibrant-ink.git
+
