@@ -22,9 +22,9 @@
 (global-set-key (kbd "M-n") 'toggle-fullscreen)
 
 ;; set the size of the emacs frame
-;; (setq default-frame-alist 
-;;       '((width . 120) 
-;;         (height . 40)))
+(setq default-frame-alist 
+      '((width . 120) 
+        (height . 40)))
 
 
 ;; set emacs to dark mode
