@@ -47,6 +47,6 @@
 (yas/load-directory (concat root-dir yasnippet-dir "/snippets"))
 
 ;; C-l inserts a hash mark
-;(eval-after-load 'ruby-mode 
- ; '(progn
-  ;   (define-key ruby-mode-map (kbd "C-l") " => ")))
+(eval-after-load 'ruby-mode 
+  '(progn
+     (define-key ruby-mode-map (kbd "C-l") " => ")))

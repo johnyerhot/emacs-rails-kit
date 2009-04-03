@@ -1,0 +1,209 @@
+;;; -*- coding: emacs-mule -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/john/rails/movies/lib/net_flix/api/" . "catalog/")
+ ("/Users/john/rails/movies/lib/net_flix/" . "builders/")
+ ("/Users/john/rails/movies/lib/lib/" . "net_flix/")
+ ("/Users/john/rails/movies/lib/flix4r-read-only/" . "samples/")
+ ("/Users/john/rails/movies/lib/" . "net_flix/")
+ ("/Users/john/rails/movies/public/" . "stylesheets/")
+ ("/Users/john/rails/movies/db/" . "migrate/")
+ ("/Users/john/rails/movies/app/views/" . "actors/")
+ ("/Users/john/rails/movies/app/" . "helpers/")
+ ("/Users/john/rails/movies/config/" . "initializers/")
+ ("/Users/john/rails/movies/" . "app/")
+ ("/Users/john/.emacs.d/elpa/" . "facebook-0.0.1/")
+ ("/Users/john/.emacs.d/" . "vendor/")
+ ("/Users/john/rails/blog/app/views/" . "shared/")
+ ("/Users/john/rails/blog/public/" . "stylesheets/")
+ ("/Users/john/rails/blog/app/" . "controllers/")
+ ("/Users/john/rails/blog/" . "app/")
+ ("/Users/john/rails/" . "movies/")
+ ("/Users/john/Sites/business_music1/" . "css/")
+ ("/Users/" . "john/")
+ ("/Users/john/Sites/coglabs/" . "css/")
+ ("/" . "Users/")
+ ("/Users/john/Sites/duluthbirth/" . "css/")
+ ("/Users/john/Sites/" . "coglabs/")
+ ("/Users/john/" . "rails/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/john/rails/movies/app/views/users/"
+ "/Users/john/rails/movies/app/helpers/"
+ "/Users/john/rails/movies/app/views/actors/"
+ "/Users/john/rails/movies/app/controllers/"
+ "/Users/john/rails/movies/app/models/"
+ "/Users/john/rails/movies/app/"
+ "/Users/john/rails/movies/app/views/viewings/"
+ "/Users/john/rails/movies/public/stylesheets/"
+ "/Users/john/rails/movies/db/migrate/"
+ "/Users/john/rails/movies/lib/"
+ "/Users/john/rails/movies/lib/net_flix/"
+ "/Users/john/rails/movies/app/views/movies/"
+ "/Users/john/rails/movies/lib/net_flix/builders/"
+ "/Users/john/rails/movies/config/"
+ "/Users/john/rails/movies/config/environments/"
+ "/Users/john/rails/movies/app/views/layouts/"
+ "/Users/john/rails/movies/"
+ "/Users/john/rails/movies/lib/net_flix/api/catalog/"
+ "/Users/john/rails/movies/lib/lib/"
+ "/Users/john/rails/movies/lib/lib/net_flix/"
+ "/Users/john/rails/movies/lib/flix4r-read-only/samples/"
+ "/"
+ "/Users/john/rails/movies/config/initializers/"
+ "/Users/john/rails/movies/app/views/sessions/"
+ "/Users/john/rails/blog/app/controllers/"
+ "/Users/john/.emacs.d/vendor/"
+ "/Users/john/rails/blog/"
+ "/Users/john/rails/blog/app/views/shared/"
+ "/Users/john/.emacs.d/"
+ "/Users/john/"
+ "/Users/john/rails/blog/app/views/layouts/"
+ "/Users/john/rails/blog/app/views/posts/"
+ "/Users/"
+ "/Users/john/rails/blog/public/stylesheets/"
+ "/Users/john/Sites/business_music1/css/"
+ "/Users/john/Sites/coglabs/"
+ "/Users/john/Sites/business_music1/"
+ "/Users/john/Sites/coglabs/css/"
+ "/Users/john/Sites/duluthbirth/css/"
+ "/Users/john/Sites/duluthbirth/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "_sidebar.html.erb"
+ "users_helper.rb"
+ "edit.html.erb"
+ "users_controller.rb"
+ "application_controller.rb"
+ "movie.rb"
+ "u"
+ "user.rb"
+ "actors_controller.rb"
+ "_upload_photo.html.erb"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/john/rails/movies/app/views/users/" (18896 10771) "show.html.erb" "new.html.erb" "_user_bar.html.erb" "_upload_photo.html.erb" "_sidebar.html.erb" "_new_viewing.html.erb" "../" "./")
+
+ ("/Users/john/rails/movies/app/helpers/" (18896 11515) "want_to_views_helper.rb" "viewings_helper.rb" "users_helper.rb" "sessions_helper.rb" "search_helper.rb" "roles_helper.rb" "movies_helper.rb" "messages_helper.rb" "genres_helper.rb" "friends_helper.rb" "cast_members_helper.rb" "application_helper.rb" "actors_helper.rb" "../" "./")
+
+ ("/Users/john/rails/movies/app/controllers/" (18896 10586) "want_to_views_controller.rb" "viewings_controller.rb" "users_controller.rb" "sessions_controller.rb" "search_controller.rb" "roles_controller.rb" "movies_controller.rb" "messages_controller.rb" "genres_controller.rb" "friends_controller.rb" "cast_members_controller.rb" "application_controller.rb" "actors_controller.rb" "../" "./")
+
+ ("/Users/john/rails/movies/app/models/" (18896 10441) "want_to_view.rb" "viewing.rb" "user_observer.rb" "user_mailer.rb" "user.rb" "role.rb" "movie.rb" "message.rb" "genre.rb" "friend.rb" "cast_members.rb" "actor.rb" "../" "./")
+
+ ("/Users/john/rails/movies/public/stylesheets/" (18896 9678) "style.css" "scaffold.css" "#style.css#" "../" "./")
+
+ ("/Users/john/" (18896 623) "src/" "Sites/" "sc0005483c.tif" "rails/" "Public/" "Pictures/" "pics/" "Peepcode/" "Music/" "Movies/" "mainline/" "Library/" "lease_somerset_mall.pdf" "ImageMagick-6.5.0/" "foo~" "foo" "Downloads/" "Documents/" "Desktop/" "agreement.pdf" ".Xcode/" ".viminfo" ".vim/" ".Trash/" ".subversion/" ".ssh/" ".sh_history" ".recentf" ".mysql_history" ".macports/" ".irb_history" ".ido.last" ".gemrc" ".gem/" ".eshell/" ".emacs.d.bak/" ".emacs.d/" ".emacs-places" ".dvdcss/" ".DS_Store" ".cups/" ".CFUserTextEncoding" ".bash_login.macports-saved_2009-03-29_at_10:20:29" ".bash_login" ".bash_history" ".adobe/" "../" "./")
+
+ ("/Users/john/.emacs.d/" (18895 59203) "vendor/" "url/" "TODO" "starter-kit-ruby.el" "starter-kit-registers.el" "starter-kit-perl.el" "starter-kit-misc.el" "starter-kit-lisp.el" "starter-kit-js.el" "starter-kit-eshell.el" "starter-kit-elpa.el" "starter-kit-defuns.el" "starter-kit-bindings.el" "README.markdown" "places" "package.el" "loaddefs.el" "init.el" "games/" "elpa-to-submit/" "elpa/" "custom.el" "COPYING" "backups/" "auto-save-list/" ".gitignore" ".git/" "#init.el#" "../" "./")
+
+ ("/Users/john/rails/movies/config/environments/" (18895 59203) "test.rb" "production.rb" "development.rb" "#production.rb#" "../" "./")
+
+ ("/Users/john/rails/movies/db/migrate/" (18896 2929) "20090329235945_add_attachments_photo_to_user.rb" "20090329211823_create_upload_fields.rb" "20090329042743_acts_as_taggable_on_migration.rb" "20090325032735_create_genres_movies.rb" "20090325022200_add_fields_to_movies.rb" "20090323025651_create_users.rb" "20090323025002_create_messages.rb" "20090323024934_create_friends.rb" "20090323024623_create_want_to_views.rb" "20090323021529_create_viewings.rb" "20090323021224_create_roles.rb" "20090323021208_create_actors.rb" "20090323021122_create_cast_members.rb" "20090323021021_create_genres.rb" "20090323020935_create_movies.rb" ".DS_Store" "../" "./")
+
+ ("/Users/john/rails/movies/app/views/actors/" (18886 61432) "show.html.erb" "new.html.erb" "index.html.erb" "edit.html.erb" "../" "./")
+
+ ("/Users/john/rails/movies/public/" (18895 59221) "system/" "stylesheets/" "robots.txt" "javascripts/" "images/" "favicon.ico" "500.html" "422.html" "404.html" ".DS_Store" "../" "./")
+
+ ("/Users/john/rails/movies/db/" (18895 37230) "schema.rb" "migrate/" ".DS_Store" "../" "./")
+
+ ("/Users/john/rails/movies/lib/" (18895 58534) "valuable.rb" "url_tempfile.rb" "title_builder.rb" "tasks/" "net_flix.rb" "net_flix/" "format_builder.rb" "credentials.yml" "authenticated_test_helper.rb" "authenticated_system.rb" "actor_builder.rb" ".DS_Store" "../" "./")
+
+ ("/Users/john/rails/movies/app/views/movies/" (18895 57702) "show.html.erb" "new.html.erb" "netflix_results.html.erb" "index.html.erb" "edit.html.erb" "../" "./")
+
+ ("/Users/john/rails/movies/lib/net_flix/builders/" (18895 57238) "title_builder.rb" "format_builder.rb" "actor_builder.rb" ".svn/" "../" "./")
+
+ ("/Users/john/rails/movies/lib/net_flix/" (18895 57266) "title.rb" "request.rb" "credentials.rb" "builders/" "authenticator.rb" "api/" ".svn/" "../" "./")
+
+ ("/Users/john/rails/movies/app/views/layouts/" (18895 52554) "movies.html.erb" "home.html.erb" ".DS_Store" "../" "./")
+
+ ("/Users/john/rails/movies/config/" (18895 53039) "routes.rb" "locales/" "initializers/" "environments/" "environment.rb" "database.yml" "boot.rb" "../" "./")
+
+ ("/Users/john/rails/movies/lib/net_flix/api/catalog/" (18894 54149) "titles.rb" ".svn/" "../" "./")
+
+ ("/Users/john/rails/movies/lib/net_flix/api/" (18888 14550) "catalog/" ".svn/" "../" "./")
+
+ ("/Users/john/rails/movies/app/views/viewings/" (18892 18501) "show.html.erb" "new.html.erb" "index.html.erb" "edit.html.erb" "../" "./")
+
+ ("/Users/john/rails/" (18890 52408) "test/" "movies/" "blog/" ".DS_Store" "../" "./")
+
+ ("/Users/john/rails/movies/app/views/search/" (18888 18483) "../" "./")
+
+ ("/Users/john/rails/movies/app/views/" (18888 18483) "want_to_views/" "viewings/" "users/" "user_mailer/" "sessions/" "search/" "roles/" "movies/" "messages/" "layouts/" "genres/" "friends/" "cast_members/" "actors/" "../" "./")
+
+ ("/Users/john/rails/movies/vendor/" (18886 59081) "plugins/" "../" "./")
+
+ ("/Users/john/rails/movies/" (18888 18722) "vendor/" "tmp/" "test/" "spec/" "script/" "README" "Rakefile" "public/" "log/" "lib/" "features/" "doc/" "db/" "config/" "app/" ".DS_Store" "../" "./")
+
+ ("/Users/john/rails/movies/lib/lib/" (18888 16684) "valuable.rb" "net_flix.rb" "net_flix/" ".svn/" "../" "./")
+
+ ("/Users/john/rails/movies/lib/lib/net_flix/" (18888 15687) "title.rb" "request.rb" "credentials.rb" "builders/" "authenticator.rb" "api/" ".svn/" "../" "./")
+
+ ("/Users/john/rails/movies/lib/flix4r-read-only/samples/" (18888 15574) "search.rb" "formats.rb" "download_full_catalog.rb" "actors.rb" ".svn/" "../" "./")
+
+ ("/Users/john/rails/movies/lib/flix4r-read-only/" (18888 14550) "tests/" "samples/" "README.txt" "lib/" "History.txt" "flix4r.rb" "credentials.yml" ".svn/" "../" "./")
+
+ ("/Users/john/rails/movies/app/views/user_mailer/" (18886 64115) "signup_notification.erb" "activation.erb" "../" "./")
+
+ ("/Users/john/rails/movies/app/views/sessions/" (18886 64832) "new.html.erb" "../" "./")
+
+ ("/Users/john/rails/movies/config/initializers/" (18886 65104) "site_keys.rb" "session_store.rb" "new_rails_defaults.rb" "mime_types.rb" "inflections.rb" "backtrace_silencers.rb" "../" "./")
+
+ ("/Users/john/rails/movies/app/" (18886 59081) "views/" "models/" "helpers/" "controllers/" "../" "./")
+
+ ("/Users/john/.emacs.d/vendor/" (18861 65188) "yasnippet.el" "twitter.el" "snippets/" "keys.el" "color-theme-6.6.0/" "../" "./")
+
+ ("/Users/john/rails/blog/app/controllers/" (18864 40384) "users_controller.rb" "sessions_controller.rb" "posts_controller.rb" "home_controller.rb" "comments_controller.rb" "categories_controller.rb" "application.rb" "admin_controller.rb" "#home_controller.rb#" "#admin_controller.rb#" "../" "./")
+
+ ("/Users/john/rails/blog/app/views/shared/" (18861 62787) "_header.html.erb" "#_header.html.erb#" "../" "./")
+
+ ("/Users/john/Sites/" (18778 30907) "insert.php" "index.php" "index.html" "images/" "duluthbirth/" "crystal.html" "coglabs/" "calculations.tmproj" "business_music2/" "business_music1/" "birthduluth_logo.psd" "BIRTH_DULUTH/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/john/rails/blog/app/views/layouts/" (18860 52671) "main.html.erb" "../" "./")
+
+ ("/Users/john/rails/blog/app/views/posts/" (18860 45644) "show.html.erb" "new.html.erb" "index.html.erb" "feed.rxml" "edit.html.erb" "all.html.erb" "_small_comments.html.erb" "_new_comment.html.erb" "_comment.html.erb" "_admin_toolbar.html.erb" "../" "./")
+
+ ("/Users/john/.emacs.d/elpa/facebook-0.0.1/" (18860 48925) "facebook.elc" "facebook.el" "facebook-pkg.elc" "facebook-pkg.el" "facebook-autoloads.el" "../" "./")
+
+ ("/Users/john/.emacs.d/elpa/" (18860 48924) "json-1.2/" "facebook-0.0.1/" "builtin-packages" "archive-contents" ".gitignore" "../" "./")
+
+ ("/Users/john/Sites/duluthbirth/" (18781 18651) "script/" "resources/" "qa/" "meet/" "index.html" "images/" "gallery/" "fees/" "expect/" "css/" ".DS_Store" "../" "./")
+
+ ("/Users/john/Sites/duluthbirth/css/" (18781 18619) "main.css" "gallery.css" "../" "./")
+
+ ("/Users/john/rails/blog/app/views/" (18860 45644) "users/" "shared/" "sessions/" "posts/" "layouts/" "home/" "comments/" "categories/" "admin/" "../" "./")
+
+ ("/Users/john/rails/blog/public/stylesheets/" (18860 45644) "yerhot.css" "scaffold.css" "admin.css" "../" "./")
+
+ ("/Users/john/rails/blog/public/" (18860 45644) "stylesheets/" "robots.txt" "javascripts/" "images/" "favicon.ico" "dispatch.rb" "dispatch.fcgi" "dispatch.cgi" "500.html" "422.html" "404.html" "../" "./")
+
+ ("/Users/john/rails/blog/app/" (18860 45644) "views/" "sweepers/" "models/" "helpers/" "controllers/" "../" "./")
+
+ ("/Users/john/rails/blog/" (18860 45644) "vendor/" "test/" "script/" "README" "Rakefile" "public/" "log/" "lib/" "doc/" "db/" "coverage.data" "config/" "Capfile" "app/" ".git/" "../" "./")
+
+ ("/Users/john/Sites/birthduluth/" (18764 12953) "index.html" "images/" "css/" ".DS_Store" "../" "./")
+
+ ("/Users/john/Sites/business_music1/css/" (18753 33728) "main.css" "../" "./")
+
+ ("/Users/john/Sites/business_music1/images/" (18755 63798) "link_right.gif" "link_left.gif" "bk.jpg" "bg_header.gif" ".DS_Store" "../" "./")
+
+ ("/Users/john/Sites/business_music1/" (18755 64219) "index.html" "images/" "css/" "businessmusic.tmproj" ".DS_Store" "../" "./")
+
+ ("/Users/" (18764 30398) "Shared/" "john/" "jen/" ".localized" "../" "./")
+
+ ("/Users/john/Sites/coglabs/css/" (18763 8900) "cog.css" "../" "./")
+
+ ("/User Guides And Information/" (18765 14872) "Welcome to Leopard.app/" "Mac mini Users Guide.pdf" "ENERGY STAR.pdf" "Bluetooth Regulatory Certification.pdf" "Apple Hardware Test Read Me.app/" "AirPort Extreme Regulatory Certification.pdf" ".localized/" "../" "./")
+
+ ("/Users/john/Sites/coglabs/" (18767 4099) "index.html" "images/" "css/" "._index.html" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
+

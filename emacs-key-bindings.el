@@ -9,5 +9,5 @@
 (global-set-key (kbd "M-/") 'comment-or-uncomment-region)
 
 ;; above commenting binding took over this useful function
-(global-set-key (kbd "M-d") 'dabbrev-expand)
+;;(global-set-key (kbd "M-d") 'dabbrev-expand)
 
