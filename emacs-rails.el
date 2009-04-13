@@ -26,6 +26,10 @@
 (load-lib-dir "vendor/rhtml")
 (require 'rhtml-mode)
 
+;; Rspec
+(load-lib-dir "vendor/rspec")
+(require 'rspec-mode)
+
 ;; Haml & Sass
 ;; So erb is nice, but haml and sass have their place, in a
 ;; way, it's easier to deal with haml and sass in emacs than it
