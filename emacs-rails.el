@@ -10,6 +10,7 @@
 (require 'ruby-electric)
 (add-to-list 'auto-mode-alist '("Capfile" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Rakefile" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.rake\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.rb\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.ru\\'" . ruby-mode))
 
@@ -19,8 +20,6 @@
 (load-lib-dir "vendor/jump")
 (load-lib-dir "vendor/rinari")
 (require 'rinari)
-
-(add-to-list 'auto-mode-alist '("\\.rake\\'" . rinari-mode))
 
 ;; Rhtml
 (load-lib-dir "vendor/rhtml")
