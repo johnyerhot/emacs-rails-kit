@@ -1,6 +1,6 @@
 ;; emacs-fuctions.el - useful functions, or, functions i find useful
 
-;; the following badass functions were taken from technomany's emacs-starter-kit
+;; the following badass functions were taken from technomancy's emacs-starter-kit
 ;; *we're not worthy*
 
 (defun untabify-buffer ()
