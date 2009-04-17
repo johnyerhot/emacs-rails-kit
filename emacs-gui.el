@@ -42,6 +42,8 @@
 (load-lib-dir "vendor/color-theme")
 (load-lib-dir "vendor/color-theme-merbivore")
 (load-lib-dir "vendor/color-theme-vibrant-ink")
+(load-lib-dir "vendor/color-theme-tango-2")
+(load-lib-dir "vendor/color-theme-wunki")
 (require 'color-theme)
 (color-theme-initialize)
 (setq color-theme-is-global t)
