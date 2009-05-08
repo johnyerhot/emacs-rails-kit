@@ -28,8 +28,14 @@ $ git submodule init
 $ git submodule update
 </pre>
 
-h3. TODO
+h3. Tips
 
-* Add RSpec modes
-* Provide a convenient way to run test files, and individual test in ruby-compilation buffers w/ auto-clearing
-                                   
+If you are running this under OS X, add these lines to sync the kill ring with the clipboard:
+
+<pre>
+(global-set-key (kbd "C-w") 'clipboard-kill-region)
+(global-set-key (kbd "M-w") 'clipboard-kill-ring-save)
+(global-set-key (kbd "C-y") 'clipboard-yank)
+</pre>
+
+You can run both Test::Unit (shoulda context included) and RSpec tests with M-r within the test file.  This will open a new buffer and run the test file.  This buffer is now auto-clearing.
