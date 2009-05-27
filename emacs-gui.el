@@ -49,6 +49,8 @@
 (setq color-theme-is-global t)
 (load-file (concat root-dir "/vendor/color-theme-merbivore/color-theme-merbivore.el"))
 (load-file (concat root-dir "/vendor/color-theme-vibrant-ink/color-theme-vibrant-ink.el"))
+(load-file (concat root-dir "/vendor/color-theme-tango-2/color-theme-tango-2.el"))
+(load-file (concat root-dir "/vendor/color-theme-wunki/color-theme-wunki.el"))
 
 ;; load the theme
 (color-theme-vibrant-ink)

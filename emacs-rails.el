@@ -25,6 +25,9 @@
 (load-lib-dir "vendor/rhtml")
 (require 'rhtml-mode)
 
+;; Over-ride M-s in rhtml mode
+(define-key rhtml-mode-map (kbd "M-s") 'save-buffer)
+
 ;; Rspec
 (load-lib-dir "vendor/rspec")
 (require 'rspec-mode)
@@ -53,3 +56,6 @@
 (eval-after-load 'ruby-mode 
   '(progn
      (define-key ruby-mode-map (kbd "C-l") " => ")))
+(eval-after-load 'rhtml-mode
+  '(progn
+     (define-key rhtml-mode-map (kbd "C-l") " => ")))
