@@ -11,3 +11,5 @@
 ;; above commenting binding took over this useful function
 (global-set-key (kbd "M-d") 'dabbrev-expand)
 
+;; For Emacs 23.1 in OSX
+(setq ns-command-modifier 'meta)
