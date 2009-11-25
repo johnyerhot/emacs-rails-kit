@@ -13,12 +13,6 @@
 [submodule "vendor/color-theme-merbivore"]
 	path = vendor/color-theme-merbivore
 	url = git://github.com/mig/color-theme-merbivore.git
-[submodule "vendor/color-theme-vibrant-ink"]
-	path = vendor/color-theme-vibrant-ink
-	url = git://github.com/mig/color-theme-vibrant-ink.git
 [submodule "vendor/rspec"]
 	path = vendor/rspec
 	url = git://github.com/pezra/rspec-mode.git
-[submodule "vendor/color-theme-tango-2"]
-	path = vendor/color-theme-tango-2
-	url = git://github.com/wfarr/color-theme-tango-2.git
