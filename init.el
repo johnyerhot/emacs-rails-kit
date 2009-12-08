@@ -18,7 +18,6 @@
 (load-lib "emacs-defaults")
 (load-lib "emacs-elpa")
 (when window-system (load-lib "emacs-gui"))
-(load-lib "emacs-key-bindings")
 (load-lib "emacs-functions")
 (load-lib "emacs-vendor")
 (load-lib "emacs-rails")
