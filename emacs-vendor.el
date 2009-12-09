@@ -20,6 +20,10 @@
 
 (require 'el-expectations)
 
+;; ack (make sure ack is in emacs path)
+(require 'ack)
+(global-set-key (kbd "M-F") 'ack)
+
 ;; Magit
 (require 'magit)
 (global-set-key (kbd "C-x g") 'magit-status)
