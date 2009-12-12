@@ -21,7 +21,11 @@
 (require 'el-expectations)
 
 ;; ack (make sure ack is in emacs path)
-(require 'ack)
+(autoload 'ack-same "full-ack" nil t)
+(autoload 'ack "full-ack" nil t)
+(autoload 'ack-find-same-file "full-ack" nil t)
+(autoload 'ack-find-file "full-ack" nil t)
+
 (global-set-key (kbd "M-F") 'ack)
 
 ;; Magit

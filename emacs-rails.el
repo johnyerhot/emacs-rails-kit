@@ -33,9 +33,6 @@
 (require 'rspec-mode)
 
 ;; Haml & Sass
-;; So erb is nice, but haml and sass have their place, in a
-;; way, it's easier to deal with haml and sass in emacs than it
-;; is html/erb.
 (require 'haml-mode)
 (add-to-list 'auto-mode-alist '("\\.haml$" . haml-mode))
 (require 'sass-mode)
