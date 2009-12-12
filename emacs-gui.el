@@ -11,7 +11,13 @@
 ;; turn off 3d modeline
 (set-face-attribute 'mode-line nil :box nil)
 
-(column-number-mode t)
+;; line numbers
+(require 'linum)
+(global-linum-mode 0)
+(setq linum-format "%d ")
+
+; apply syntax highlighting to all buffers
+(global-font-lock-mode t)
 
 ;; Full screen toggle 
 (defun toggle-fullscreen ()
