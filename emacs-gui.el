@@ -11,6 +11,12 @@
 ;; turn off 3d modeline
 (set-face-attribute 'mode-line nil :box nil)
 
+;; smoother scrolling
+(setq
+ scroll-margin 0                  
+  scroll-conservatively 100000
+  scroll-preserve-screen-position 1)
+
 ;; line numbers
 (require 'linum)
 (global-linum-mode 0)
