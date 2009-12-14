@@ -21,6 +21,7 @@
 (load-lib "emacs-functions")
 (load-lib "emacs-vendor")
 (load-lib "emacs-rails")
+(load-lib "emacs-shell")
 
 (load custom-file 'noerror)
 

@@ -31,8 +31,3 @@
 
 ;; open any .bash files in sh-mode
 (add-to-list 'auto-mode-alist '("\\.bash.*" . sh-mode))
-
-;; set emacs path
-(setq path "/bin:/usr/local/bin:/usr/bin:/usr/sbin")
-(setenv "PATH" path)
-(push "/usr/local/bin" exec-path)
