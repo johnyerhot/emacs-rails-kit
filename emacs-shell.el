@@ -24,3 +24,9 @@
 ;; escape the shell
 (add-hook 'eshell-mode-hook
   '(lambda nil (local-set-key "\C-u" 'eshell-kill-input)))
+
+;; provides 'clear' command
+(defun eshell/clear ()
+  (interactive)
+  (let ((inhibit-read-only t))
+    (erase-buffer)))
