@@ -49,3 +49,6 @@
 (eval-after-load 'rhtml-mode
   '(progn
      (define-key rhtml-mode-map (kbd "C-l") " => ")))
+(eval-after-load 'rhtml-mode
+  '(progn
+     (define-key rhtml-mode-map (kbd "C->") 'rinari-insert-erb-skeleton)))
