@@ -52,3 +52,11 @@
 (eval-after-load 'rhtml-mode
   '(progn
      (define-key rhtml-mode-map (kbd "C->") 'rinari-insert-erb-skeleton)))
+
+;; You must install yasnippet from ELPA before uncommenting and using
+;; the following
+; (require 'yasnippet)
+; (yas/initialize)
+; (yas/load-directory
+;  (concat (file-name-directory (or load-file-name buffer-file-name))
+; 	 "vendor/yasnippets-rails/rails-snippets/"))

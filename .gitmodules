@@ -16,3 +16,6 @@
 [submodule "vendor/rspec"]
 	path = vendor/rspec
 	url = git://github.com/pezra/rspec-mode.git
+[submodule "vendor/yasnippets-rails"]
+	path = vendor/yasnippets-rails
+	url = git://github.com/eschulte/yasnippets-rails.git
