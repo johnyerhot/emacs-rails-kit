@@ -1,21 +1,9 @@
 [submodule "vendor/rhtml"]
 	path = vendor/rhtml
 	url = git://github.com/eschulte/rhtml.git
-[submodule "vendor/rinari"]
-	path = vendor/rinari
-	url = git://github.com/eschulte/rinari.git
-[submodule "vendor/jump"]
-	path = vendor/jump
-	url = git://github.com/eschulte/jump.el.git
-[submodule "vendor/textmate"]
-	path = vendor/textmate
-	url = git://github.com/defunkt/textmate.el.git
 [submodule "vendor/color-theme-merbivore"]
 	path = vendor/color-theme-merbivore
 	url = git://github.com/mig/color-theme-merbivore.git
-[submodule "vendor/rspec"]
-	path = vendor/rspec
-	url = git://github.com/pezra/rspec-mode.git
 [submodule "vendor/yasnippets-rails"]
 	path = vendor/yasnippets-rails
 	url = git://github.com/eschulte/yasnippets-rails.git
