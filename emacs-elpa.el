@@ -15,7 +15,7 @@
                                'rspec-mode
                                'textmate 
                                'yaml-mode
-                               'yasnippet)
+                               'yasnippet-bundle)
   "Libraries that should be installed by default.")
 
 (defun starter-kit-elpa-install ()
