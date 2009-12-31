@@ -15,8 +15,10 @@
 (setq autoload-file (concat root-dir "loaddefs.el"))
 (setq custom-file (concat root-dir "custom.el"))
 
-(load-lib "emacs-defaults")
+;; load elpa before anything else
 (load-lib "emacs-elpa")
+
+(load-lib "emacs-defaults")
 (when window-system (load-lib "emacs-gui"))
 (load-lib "emacs-functions")
 (load-lib "emacs-vendor")
