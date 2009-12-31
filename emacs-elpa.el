@@ -21,12 +21,11 @@
 (defun starter-kit-elpa-install ()
   "Install all starter-kit packages that aren't installed."
   (interactive)
-  (dolist (package starter-kit-packages)
-    (unless (functionp package)
+  (dolist (package auto-install-packages)
+    (unless (or (member package package-activated-list)
+                (functionp package))
+      (message "Installing %s" (symbol-name package))
       (package-install package))))
-
-;; On your first run, this should pull in all the base packages.
-;; But you might not be online, so ignore errors.
-(ignore-errors
-  (message "Checking base list of packages...")
-  (starter-kit-elpa-install))
+      
+(unless package-archive-contents (package-refresh-contents))
+(starter-kit-elpa-install)
