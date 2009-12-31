@@ -1,10 +1,10 @@
 ;;; package.el --- Simple package system for Emacs
 
-;; Copyright (C) 2007, 2008 Tom Tromey <tromey@redhat.com>
+;; Copyright (C) 2007, 2008, 2009 Tom Tromey <tromey@redhat.com>
 
 ;; Author: Tom Tromey <tromey@redhat.com>
 ;; Created: 10 Mar 2007
-;; Version: 0.8
+;; Version: 0.9
 ;; Keywords: tools
 
 ;; This file is not (yet) part of GNU Emacs.
@@ -12,7 +12,7 @@
 
 ;; GNU Emacs is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
-;; the Free Software Foundation; either version 2, or (at your option)
+;; the Free Software Foundation; either version 3, or (at your option)
 ;; any later version.
 
 ;; GNU Emacs is distributed in the hope that it will be useful,
@@ -139,6 +139,7 @@
 ;; Sebastian Tennant <sebyte@smolny.plus.com>
 ;; Stefan Monnier <monnier@iro.umontreal.ca>
 ;; Vinicius Jose Latorre <viniciusjl@ig.com.br>
+;; Phil Hagelberg <phil@hagelb.org>
 
 ;;; ToDo:
 
@@ -217,7 +218,7 @@ Lower version numbers than this will probably be understood as well.")
 (defconst package-el-maintainer "Tom Tromey <elpa@tromey.com>"
   "The package.el maintainer.")
 
-(defconst package-el-version "0.8"
+(defconst package-el-version "0.9"
   "Version of package.el.")
 
 ;; We don't prime the cache since it tends to get out of date.
@@ -241,6 +242,15 @@ but have an extra entry which is 'tar for tar packages and
 (defun package-version-split (string)
   "Split a package string into a version list."
   (mapcar 'string-to-int (split-string string "[.]")))
+
+(defun package-version (package-name)
+  "Return the version number of the given package."
+  (let ((package (if (stringp package-name)
+                     (intern package-name)
+                   package-name)))
+    (when (assq package package-alist)
+      (package-version-join (package-desc-vers
+                             (cdr (assq package package-alist)))))))
 
 (defconst package--builtins-base
   ;; We use package-version split here to make sure to pick up the
@@ -414,12 +424,16 @@ Recursively activates all dependencies of the named package."
 	   (keep-going (or (not (memq package package-activated-list))
 			   (package-version-compare this-version version '>))))
       (while (and req-list keep-going)
-	(or (package-activate (car (car req-list))
-			      (car (cdr (car req-list))))
-	    (setq keep-going nil))
+        (package-activate (car (car req-list))
+                          (car (cdr (car req-list))))
 	(setq req-list (cdr req-list)))
       (if keep-going
-	  (package-do-activate package (cdr pkg-desc))))))
+	  (package-do-activate package (cdr pkg-desc))
+	;; We get here if a dependency failed to activate -- but we
+	;; can also get here if the requested package was already
+	;; activated.  Return non-nil in the latter case.
+	(and (memq package package-activated-list)
+	     (package-version-compare this-version version '>=))))))
 
 (defun package-mark-obsolete (package pkg-vec)
   "Put package on the obsolete list, if not already there."
@@ -1462,6 +1476,8 @@ The list is displayed in a buffer named `*Packages*'."
   (interactive)
   (package-refresh-contents)
   (package--list-packages))
+
+(defalias 'package 'package-list-packages)
 
 (defun package-list-packages-no-fetch ()
   "Display a list of packages.
