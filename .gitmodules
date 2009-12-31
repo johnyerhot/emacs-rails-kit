@@ -7,3 +7,6 @@
 [submodule "vendor/yasnippets-rails"]
 	path = vendor/yasnippets-rails
 	url = git://github.com/eschulte/yasnippets-rails.git
+[submodule "vendor/markdown-mode"]
+	path = vendor/markdown-mode
+	url = git://jblevins.org/git/markdown-mode.git
