@@ -1,10 +1,5 @@
 ;; emacs-rails.el - config that will make working with rails seriously fun
 
-;; Textmate - helpful mode from defunkt
-(load-lib-dir "vendor/textmate")
-(require 'textmate)
-(textmate-mode t)
-
 ;; Ruby
 (require 'ruby-mode)
 (require 'ruby-electric)
@@ -16,31 +11,12 @@
 
 (global-set-key (kbd "M-r") 'ruby-compilation-this-buffer)
 
-;; Rinari
-(load-lib-dir "vendor/jump")
-(load-lib-dir "vendor/rinari")
-(require 'rinari)
-
 ;; Rhtml
 (load-lib-dir "vendor/rhtml")
 (require 'rhtml-mode)
 
 ;; Over-ride M-s in rhtml mode
 (define-key rhtml-mode-map (kbd "M-s") 'save-buffer)
-
-;; Rspec
-(load-lib-dir "vendor/rspec")
-(require 'rspec-mode)
-
-;; Haml & Sass
-(require 'haml-mode)
-(add-to-list 'auto-mode-alist '("\\.haml$" . haml-mode))
-(require 'sass-mode)
-(add-to-list 'auto-mode-alist '("\\.sass$" . sass-mode))
-
-;; YAML
-(require 'yaml-mode)
-(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
 ;; C-l inserts a hash mark
 (eval-after-load 'ruby-mode 
