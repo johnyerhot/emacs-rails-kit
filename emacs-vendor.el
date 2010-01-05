@@ -9,6 +9,9 @@
 ;; Unbound - describe-unbound-keys
 (require 'unbound)
 
+;; Textmate mode
+(textmate-mode t)
+
 (global-set-key (kbd "M-F") 'ack)
 (global-set-key (kbd "C-x g") 'magit-status)
 
