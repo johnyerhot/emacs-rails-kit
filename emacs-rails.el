@@ -27,7 +27,10 @@
      (define-key rhtml-mode-map (kbd "C-l") " => ")))
 (eval-after-load 'rhtml-mode
   '(progn
-     (define-key rhtml-mode-map (kbd "C->") 'rinari-insert-erb-skeleton)))
+     (define-key rhtml-mode-map (kbd "C->") 'rinari-insert-erb-skeleton)
+     (define-key rhtml-mode-map (kbd "C-M->") (lambda () 
+                                                (interactive) 
+                                                (rinari-insert-erb-skeleton 0)))))
 
 (require 'yasnippet)
 (yas/initialize)
