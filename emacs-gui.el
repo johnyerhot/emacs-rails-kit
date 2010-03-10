@@ -17,11 +17,6 @@
   scroll-conservatively 100000
   scroll-preserve-screen-position 1)
 
-;; line numbers
-(require 'linum)
-(global-linum-mode 0)
-(setq linum-format "%d ")
-
 ; apply syntax highlighting to all buffers
 (global-font-lock-mode t)
 
