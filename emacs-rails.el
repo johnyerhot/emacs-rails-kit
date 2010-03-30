@@ -18,6 +18,11 @@
 ;; Over-ride M-s in rhtml mode
 (define-key rhtml-mode-map (kbd "M-s") 'save-buffer)
 
+;; Cucumber
+(load-lib-dir "vendor/cucumber")
+(require 'feature-mode)
+(add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
+
 ;; C-l inserts a hash mark
 (eval-after-load 'ruby-mode 
   '(progn

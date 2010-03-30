@@ -10,9 +10,6 @@
 [submodule "vendor/markdown-mode"]
 	path = vendor/markdown-mode
 	url = git://jblevins.org/git/markdown-mode.git
-[submodule "cucumber"]
-	path = cucumber
-	url = git://github.com/michaelklishin/cucumber.el.git
 [submodule "vendor/cucumber"]
 	path = vendor/cucumber
 	url = git://github.com/michaelklishin/cucumber.el.git
