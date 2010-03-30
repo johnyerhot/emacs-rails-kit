@@ -12,6 +12,11 @@
 ;; Textmate mode
 (textmate-mode t)
 
+(global-set-key (kbd "M-RET") 'textmate-next-line)
+(global-set-key (kbd "M-/") 'comment-or-uncomment-region-or-line)
+(global-set-key (kbd "M-t") 'textmate-goto-file)
+(global-set-key (kbd "M-T") 'textmate-goto-symbol)
+
 (global-set-key (kbd "M-F") 'ack)
 (global-set-key (kbd "C-x g") 'magit-status)
 
