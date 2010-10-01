@@ -15,13 +15,15 @@
 (setq autoload-file (concat root-dir "loaddefs.el"))
 (setq custom-file (concat root-dir "custom.el"))
 
-(load-lib "emacs-defaults")
+;; load elpa before anything else
 (load-lib "emacs-elpa")
+
+(load-lib "emacs-defaults")
 (when window-system (load-lib "emacs-gui"))
-(load-lib "emacs-key-bindings")
 (load-lib "emacs-functions")
 (load-lib "emacs-vendor")
 (load-lib "emacs-rails")
+(load-lib "emacs-shell")
 
 (load custom-file 'noerror)
 
@@ -31,5 +33,7 @@
 
 (if (file-exists-p system-specific-config) (load system-specific-config))
 (if (file-exists-p user-specific-config) (load user-specific-config))
+
+(set-frame-size-according-to-resolution)
 
  ;; init.el end

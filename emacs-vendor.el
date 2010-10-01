@@ -1,5 +1,4 @@
 ;; emacs-vedor.el - general purpose modes to extend emacs
-
 (load-lib-dir "vendor")
 
 ;; Interactively Do Things (ido) emacs is more fun with ido fo real
@@ -10,8 +9,15 @@
 ;; Unbound - describe-unbound-keys
 (require 'unbound)
 
-;; Magit
-(require 'magit)
+;; Textmate mode
+(textmate-mode t)
+
+(global-set-key (kbd "M-RET") 'textmate-next-line)
+(global-set-key (kbd "M-/") 'comment-or-uncomment-region-or-line)
+(global-set-key (kbd "M-t") 'textmate-goto-file)
+(global-set-key (kbd "M-T") 'textmate-goto-symbol)
+
+(global-set-key (kbd "M-F") 'ack)
 (global-set-key (kbd "C-x g") 'magit-status)
 
 (eval-after-load 'magit
@@ -23,8 +29,11 @@
 (require 'textile-mode)
 (add-to-list 'auto-mode-alist '("\\.textile\\'" . textile-mode))
 
-;; CSS
-(require 'css-mode)
+;; Markdown
+(autoload 'markdown-mode "markdown-mode/markdown-mode.el"
+   "Major mode for editing Markdown files" t)
+(setq auto-mode-alist
+   (cons '("\\.text" . markdown-mode) auto-mode-alist))
 
 ;; Javascript (espresso)
 (autoload 'espresso-mode "espresso" nil t)
@@ -34,9 +43,3 @@
 
 ;; Cheat - for using cheat.errtheblog.com for some reference
 (require 'cheat)
-
-;; Gist - learn to use this within emacs and it WILL help you
-;; it will use your ~/.gitconfig if it finds one
-;; see: http://github.com/blog/180-local-github-config
-(require 'gist)
-

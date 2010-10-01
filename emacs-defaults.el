@@ -5,6 +5,8 @@
 (setq ring-bell-function 'ignore)
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
+(set-default 'indicate-empty-lines t)
+(set-default 'imenu-auto-rescan t)
 (setq mac-emulate-three-button-mouse nil)
 
 (mouse-wheel-mode t)
@@ -15,18 +17,10 @@
 (recentf-mode 1)
 (show-paren-mode 1)
 
-;; ido-mode tweaks from technomancy
-(when (> emacs-major-version 21)
-  (ido-mode t)
-  (setq ido-enable-prefix nil
-        ido-enable-flex-matching t
-        ido-create-new-buffer 'always
-        ido-use-filename-at-point t
-        ido-max-prospects 10))
-
-(set-default 'indent-tabs-mode nil)
-(set-default 'indicate-empty-lines t)
-(set-default 'imenu-auto-rescan t)
+(require 'ido)
+(ido-mode t)
+(setq ido-enable-flex-matching t) ; case insensitive matching
+(add-to-list 'ido-ignore-files "\\.DS_Store")
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
