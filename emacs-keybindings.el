@@ -1,0 +1,1 @@
+(global-set-key [C-tab] 'indent-region)

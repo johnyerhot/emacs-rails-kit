@@ -17,7 +17,7 @@
 
 ;; load elpa before anything else
 (load-lib "emacs-elpa")
-
+(load-lib "emacs-keybindings")
 (load-lib "emacs-defaults")
 (when window-system (load-lib "emacs-gui"))
 (load-lib "emacs-functions")
