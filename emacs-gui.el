@@ -55,3 +55,7 @@
 
 ;; load the theme
 (color-theme-merbivore)
+
+;; custom keybindings
+(global-set-key (kbd "C-.") 'forward-word)
+(global-set-key (kbd "C-,") 'backward-word)
